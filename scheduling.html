@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheduling and Accommodations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="rooms-table">
+  <caption>Cosmic Oasis – Orbital Room Options</caption>
+  <thead>
+    <tr>
+      <th>Room Type</th>
+      <th>Capacity</th>
+      <th>Key Features & Amenities</th>
+      <th>Starting Price (per week, est.)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><button type="button" onclick="room(1)">Orbital Haven</button></td>
+      <td>1–2 guests</td>
+      <td>Compact private suite, Earth-view window</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>Observation Suite</td>
+      <td>2 guests</td>
+      <td>Larger window overlooking Earth</td>
+      <td>$200</td>
+    </tr>
+    <tr>
+      <td>Stellar Family</td>
+      <td>4–6+ guests</td>
+      <td>Multi-room layout for families/adventurous groups</td>
+      <td>$680</td>
+    </tr>
+    <tr>
+      <td>Galactic Honeymoon Villa</td>
+      <td>2 guests</td>
+      <td>Ultra-luxury, private infinity-edge viewing bubble</td>
+      <td>$750</td>
+    </tr>
+    <tr>
+      <td>Orbital Oasis</td>
+      <td>2–4 guests</td>
+      <td>Top-tier exclusive access, full private gym, private infinity-edge viewing bubble</td>
+      <td>$1,200</td>
+    </tr>
+  </tbody>
+</table>
+
+<img src="pic" alt="Hotel Room" style="display: none; width: 70%; margin: auto;">
+
+<script>
+    function room(sw) {
+        if (sw == 1) {
+            pic = "images/room.png";
+        } else {}
+        
+        document.querySelector('img[alt="Hotel Room"]').src = pic;
+        document.querySelector('img[alt="Hotel Room"]').style.display = "block";
+    }
+</script>
+
+<iframe src="https://www.google.com/maps/embed?"></iframe>
+
+</body>
+</html>
