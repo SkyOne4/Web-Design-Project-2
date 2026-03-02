@@ -9,14 +9,17 @@ h1{
     color: rgb(0, 0, 0);
     background-color: rgb(69, 69, 223);
     font-family: Lora, serif;
-    padding: 2%;
+    padding: 1%;
     border: 0.5rem solid rgb(69, 69, 223);
     border-radius: 200px;
     margin: 1.5rem;
     width: 40%;
-    height: 15%;
+    height: 10%;
     font-size: 150%;
     text-align: center;
+    min-width: 200px;
+    min-height: 10px;
+    max-width: fit-content;
 }
 .logo{
     width: 10%;
@@ -185,4 +188,93 @@ iframe{
 
 .rooms-table tr:hover {
     background-color: rgba(0, 204, 255, 0.15);  
+}
+
+
+form{
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(10, 20, 60, 0.7);          
+    border-radius: 15px;
+    color: #e0f7ff;                             
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #1e3a8a;                
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #1e3a8a;                
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.booking-form form {
+    text-align: center;
+    color: #00ccff;
+    margin-bottom: 20px;
+}
+.layout {
+    display: grid;
+    grid-template-columns: 0.25fr 0.75fr;
+}
+.room-buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+.room-buttons button{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-top: 15px;
+    width: 90%;
+
+    background-color: #4d7dff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 2.5vw;
+    font-family: audiowide, serif;
+}
+
+.room-buttons button:hover {
+    background-color: #0a2a6a; /* Darker shade on hover */
+}
+.room-images {
+    width: 100%;
+    max-width: 800px;
+    display: none;
+    border: #0b3788 solid 10px;
+    border-radius: 50px;
+    margin-right: auto;
+}
+
+.booking-form button {
+    background-color: #4d7dff;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+   
+}
+.booking-form button:hover {
+    background-color: #0a2a6a; /* Darker shade on hover */
 }

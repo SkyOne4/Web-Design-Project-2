@@ -5,8 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scheduling and Accommodations</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=https://fonts.googleapis.com/css?family=Lora|Audiowide>
+
 </head>
 <body>
+
+  <div class="layout">
+  <div class="room-buttons">
+    <button onclick="room(1)">Orbital Haven</button>
+    <button onclick="room(2)">Observation Suite</button>
+    <button onclick="room(3)">Stellar Family</button>
+    <button onclick="room(4)">Galactic Honeymoon Villa</button>
+    <button onclick="room(5)">Orbital Oasis</button>
+  </div>
+  
+    <img class="room-images" alt="Hotel Room">
+  </div>
+
+<script>
+    function room(sw) {
+        if (sw == 1) {
+            pic = "images/room.png";
+        } else if (sw == 2) {
+            pic = "images/room2.png";
+        } else if (sw == 3) {
+            pic = "images/room3.png";
+        } else if (sw == 4) {
+            pic = "images/room4.png";
+        } else if (sw == 5) {
+            pic = "images/room5.png";
+        }
+        
+        document.querySelector('img[alt="Hotel Room"]').src = pic;
+        document.querySelector('img[alt="Hotel Room"]').style.display = "grid";
+    }
+</script>
+
+
+   <!-- 
+  
     <table class="rooms-table">
   <caption>Cosmic Oasis – Orbital Room Options</caption>
   <thead>
@@ -51,6 +88,7 @@
   </tbody>
 </table>
 
+
 <img src="pic" alt="Hotel Room" style="display: none; width: 70%; margin: auto;">
 
 <script>
@@ -64,7 +102,25 @@
     }
 </script>
 
+<form class="booking-form">
+  <label for="room">Select a Room:</label>
+  <select name="room" id="room">
+    <option value="orbital-haven">Orbital Haven</option>
+    <option value="observation-suite">Observation Suite</option>
+    <option value="stellar-family">Stellar Family</option>
+    <option value="galactic-honeymoon-villa">Galactic Honeymoon Villa</option>
+    <option value="orbital-oasis">Orbital Oasis</option>
+  </select><br>
+  <label for="email">Enter your email to receive booking details:</label>
+  <input type="email">
+  <button type="submit">Submit</button>
+</form>
+-->
+
 <iframe src="https://www.google.com/maps/embed?"></iframe>
+
+
+
 
 </body>
 </html>
